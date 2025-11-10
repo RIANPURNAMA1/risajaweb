@@ -18,14 +18,14 @@ export default function Home() {
     <main className="flex flex-col items-center bg-white text-gray-800">
       <Navbar />
       {/* Hero Section */}
-       <HeroSection/>
+      <HeroSection />
       {/* Services Section */}
-      <section className="w-full max-w-6xl px-6 py-20 text-center"  id="features">
+      <section className="w-full max-w-6xl px-6 py-20 text-center" id="features">
         <h2 className="text-3xl font-bold mb-6">Layanan Pembuatan Website</h2>
         <p className="text-gray-600 max-w-2xl mx-auto mb-10">
           Nikmati berbagai pilihan layanan mulai dari landing page, company profile, hingga sistem berbasis web yang disesuaikan dengan kebutuhan Anda.
         </p>
-    <ServiceCards/>
+        <ServiceCards />
       </section>
 
       <JoinPartnerSection />
@@ -36,18 +36,18 @@ export default function Home() {
         <p className="text-gray-600 max-w-2xl mx-auto mb-10">
           Kami menawarkan berbagai paket harga sesuai kebutuhan Anda, mulai dari website personal hingga bisnis berskala besar.
         </p>
-       <PacketCard/>
+        <PacketCard />
         <TestimonialCarousel />
       </section>
       <section className="w-full">
         <CTASection />
         <FAQSection />
-        <ContactForm/>
+        <ContactForm />
         <FloatingWhatsApp />
       </section>
 
       {/* Footer */}
-      <Footer/>
+      <Footer />
     </main>
   );
 }

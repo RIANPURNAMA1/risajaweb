@@ -5,17 +5,19 @@ import { motion } from "framer-motion";
 export default function JoinPartnerSection() {
   return (
     <section className="relative w-full max-w-6xl px-6 py-20 mx-auto">
+      
       {/* Background decorative circles */}
-      <div className="absolute -top-20 -left-20 w-64 h-64 bg-blue-200 opacity-20 rounded-full"></div>
-      <div className="absolute -bottom-20 -right-20 w-64 h-64 bg-blue-300 opacity-20 rounded-full"></div>
+      <div className="absolute -top-20 -left-20 w-64 h-64 bg-blue-200 opacity-20 rounded-full pointer-events-git none"></div>
+      {/* <div className="absolute -bottom-20 -right-20 w-64 h-64 bg-blue-300 opacity-20 rounded-full pointer-events-none"></div> */}
 
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.2 }}
         transition={{ duration: 0.8 }}
-        viewport={{ once: true }}
-        className="flex flex-col md:flex-row items-center justify-between bg-gradient-to-r from-white/80 to-blue-50 backdrop-blur-md rounded-3xl shadow-2xl p-8 md:p-16 gap-10"
+        className="flex flex-col md:flex-row items-center justify-between bg-gradient-to-r from-white/80 to-blue-50 backdrop-blur-md rounded-3xl shadow-2xl p-8 md:p-16 gap-10 min-h-[300px]"
       >
+        
         {/* Text Section */}
         <div className="md:w-1/2 space-y-6">
           <h2 className="text-3xl md:text-4xl font-extrabold text-blue-800">
@@ -36,7 +38,7 @@ export default function JoinPartnerSection() {
             alt="Partner"
             width={400}
             height={400}
-            className="rounded-2xl shadow-lg"
+            className="rounded-2xl shadow-lg object-cover"
           />
         </div>
       </motion.div>
