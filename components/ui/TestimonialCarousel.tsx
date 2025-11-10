@@ -65,8 +65,8 @@ export default function TestimonialCarousel() {
           Apa Kata Mereka?
         </motion.h2>
 
-        <div className="overflow-hidden" ref={emblaRef}>
-          <div className="flex">
+        <div className="overflow-hidden " ref={emblaRef}>
+          <div className="flex p-3">
             {testimonials.map((t, i) => (
               <motion.div
                 key={i}

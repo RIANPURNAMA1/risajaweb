@@ -8,7 +8,7 @@ export default function JoinPartnerSection() {
       
       {/* Background decorative circles */}
       <div className="absolute -top-20 -left-20 w-64 h-64 bg-blue-200 opacity-20 rounded-full pointer-events-git none"></div>
-      {/* <div className="absolute -bottom-20 -right-20 w-64 h-64 bg-blue-300 opacity-20 rounded-full pointer-events-none"></div> */}
+      <div className="absolute -bottom-20 right-0 w-64 h-64 bg-blue-300 opacity-20 rounded-full pointer-events-none"></div>
 
       <motion.div
         initial={{ opacity: 0, y: 40 }}
